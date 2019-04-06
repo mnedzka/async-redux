@@ -30,8 +30,8 @@ class NewPost extends React.Component {
   render() {
     return (
       <div className='field'>
-        <form onSubmit={this.handleSubmit}>
-          <div className='control'>
+        <form onSubmit={this.handleSubmit} className='field'>
+          <div className='field'>
             <input
               type='text'
               placeholder='Title'
@@ -41,22 +41,22 @@ class NewPost extends React.Component {
               value={this.state.title}
             />
           </div>
-          <div className='form-group'>
+          <div className='field'>
             <textarea
               cols='19'
               rows='8'
               placeholder='Body'
-              className='form-control'
+              className='textarea'
               name='body'
               onChange={this.handleInputChange}
               value={this.state.body}
             />
           </div>
-          <div className='form-group'>
-            <button type='submit' className='btn btn-primary'>
+          <div className='control'>
+            <button type='submit' className='button is-link'>
               Add Post
             </button>
-            <button type='button' className='btn btn-warning' onClick={this.handleReset}>
+            <button type='button' className='button is-text' onClick={this.handleReset}>
               Reset
             </button>
           </div>
