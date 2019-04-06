@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
+import NewPost from './NewPost';
 
 class App extends Component {
   render() {
-    return <div className='App'>Hello</div>;
+    return (
+      <div className='App'>
+        <NewPost />
+      </div>
+    );
   }
 }
 
