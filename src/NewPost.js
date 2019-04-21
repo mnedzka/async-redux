@@ -1,4 +1,5 @@
 import React from 'react';
+import CreatePost from './containers/CreatePost';
 
 class NewPost extends React.Component {
   state = {
