@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Post from '../components/Post';
+import Post from '../Post';
 import { deletePost } from '../actions';
 
 function PostList({ posts, onDelete }) {
